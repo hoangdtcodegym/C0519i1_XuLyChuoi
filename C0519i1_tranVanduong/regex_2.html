@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let regex = /^[0-9]{5}(?:-[0-9]{4})?$/;
+    function is_usZipCode(str) {
+        regex = /^[0-9]{5}(?:-[0-9]{4})?$/;
+        if(regex.test(str)){
+            return true ;
+
+        }
+        return false;
+        
+    }
+    console.log(is_usZipCode("09283-0215"));
+</script>
+</body>
+</html>
