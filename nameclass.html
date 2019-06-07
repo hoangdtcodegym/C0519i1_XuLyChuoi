@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkNameClass(str) {
+        let regexp = /^[ACP][0-9]{4,4}[GHIKLM]$/;
+        if (regexp.test(str)) {
+            alert('this name class is correct');
+        } else {
+            alert('this name class is invalid')
+        }
+    }
+    checkNameClass('ACP0318H');
+</script>
+</body>
+</html>
