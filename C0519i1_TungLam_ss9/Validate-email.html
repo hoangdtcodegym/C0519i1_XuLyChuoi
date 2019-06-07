@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function email(str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)) {
+            return true;
+        } return  false;
+    }
+
+    console.log(email('a@gmail.com'));
+    console.log(email("ab@yahoo.com"));
+    console.log(email("@#abc@gmail.com"));
+</script>
+
+</body>
+</html>
