@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    function isNotNumber(str) {
+        let regexp = /[a-zA-Z]/;
+        for (let i = 0; i < str.length; i ++)  {
+            let str1 = str[i].toString();
+            if (regexp.test(str1)) {
+                count ++;
+            }
+        }
+    }
+    isNotNumber('ahe1ACD3243');
+    alert(count);
+</script>
+</body>
+</html>

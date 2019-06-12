@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkNumberPhone(str) {
+        let regexp = /^[0-9][0-9][\-][0-9]{10,11}$/;
+        if (regexp.test(str)) {
+            alert('number phone correct');
+        } else {
+            alert('number phone invalid');
+        }
+    }
+    checkNumberPhone('84-0938594859')
+</script>
+</body>
+</html>
