@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkDate(str) {
+        let regexp = /^[0-9][0-9]\/[0-9][0-9]\/[0-9]{4,4}$/;
+        if (regexp.test(str)) {
+            alert('true');
+        } else {
+            alert('false');
+        }
+    }
+    checkDate('22/12/2009')
+</script>
+</body>
+</html>
