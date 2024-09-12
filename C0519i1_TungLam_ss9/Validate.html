@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate tên của lớp học</title>
+</head>
+<body>
+<script>
+    function validate(str) {
+        regexp = /^[CAP]+[0-9]{4}[GHIKLM]$/;
+            if (regexp.test(str)) {
+                return true;
+            }
+            return false
+    }
+    console.log(validate("C0519I"));
+    console.log(validate("M0318G"));
+</script>
+</body>
+</html>
